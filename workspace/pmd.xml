@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.4.1" timestamp="2016-04-04T01:29:37.658">
+<file name="/var/lib/jenkins/jobs/Sudoku/workspace/jSudoku/src/oyg/sudoku/CreateSudokuGUI.java">
+<violation beginline="250" endline="250" begincolumn="15" endcolumn="42" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="frame1" method="AddNumToBoard" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="258" endline="258" begincolumn="15" endcolumn="42" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="frame1" method="AddNumToBoard" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/var/lib/jenkins/jobs/Sudoku/workspace/jSudoku/src/oyg/sudoku/Soduko.java">
+<violation beginline="75" endline="75" begincolumn="25" endcolumn="53" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="Soduko" method="CheckSodukoBoard" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="90" endline="90" begincolumn="17" endcolumn="45" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="Soduko" method="CheckSodukoBoard" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="154" endline="154" begincolumn="17" endcolumn="44" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="Soduko" method="createRandomFirstRow" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+<file name="/var/lib/jenkins/jobs/Sudoku/workspace/jSudoku/src/oyg/sudoku/SodukoObject.java">
+<violation beginline="15" endline="15" begincolumn="17" endcolumn="46" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="SodukoObject" method="SodukoObject" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="46" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="SodukoObject" method="SodukoObject" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="29" endline="29" begincolumn="17" endcolumn="46" rule="EmptyCatchBlock" ruleset="Empty Code" package="oyg.sudoku" class="SodukoObject" method="SodukoObject" externalInfoUrl="https://pmd.github.io/pmd-5.4.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+</pmd>

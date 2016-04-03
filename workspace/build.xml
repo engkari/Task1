@@ -1,0 +1,42 @@
+<project name="jSudoku" default="pmd">
+	<import file="macrodefs.xml" />
+	<echo message = "Cleanup" />
+	 <delete dir="bin"/>
+	 <delete file="jSudoku.jar"/>
+	 <delete file="pmd.xml"/>
+
+	<mkdir dir="jSudoku" />
+	<git command = "pull" dir="jSudoku" />
+	
+    <target name="src">
+		<mkdir dir="bin" />
+		<javac includeantruntime="false" srcdir="jSudoku/src" destdir="bin" />
+		<copy todir="bin">
+			<fileset dir="jSudoku/src" />
+		</copy>
+	</target>
+
+	<target name ="makejar" depends="src">
+		<jar jarfile="jSudoku.jar" basedir="bin" >
+			<manifest>
+				<attribute name="Main-Class" value="oyg.sudoku.CreateSudokuGUI" />
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name = "pmd" depends="src,makejar">
+		<property name="pmd.dir" value="/var/lib/jenkins/pmd" />
+        <path id="pmd.classpath">
+			<fileset dir="${pmd.dir}\lib"> 
+				<include name="*.jar" /> 
+            </fileset>
+        </path>
+		<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath" />
+		<pmd rulesetfiles="pmdRules.xml" failOnRuleViolation="no" >
+            <formatter type="xml" toFile="pmd.xml" toConsole="true" />
+            <fileset dir="jSudoku/src/">
+                <include name="**/*.java"/>
+            </fileset>
+        </pmd>
+	</target>
+</project>

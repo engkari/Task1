@@ -1,0 +1,34 @@
+Console Output
+
+Started by user anonymous
+Building in workspace /var/lib/jenkins/jobs/Sudoku/workspace
+[workspace] $ ant -file build.xml
+Buildfile: /var/lib/jenkins/jobs/Sudoku/workspace/build.xml
+     [echo] Cleanup
+   [delete] Deleting directory /var/lib/jenkins/jobs/Sudoku/workspace/bin
+   [delete] Deleting: /var/lib/jenkins/jobs/Sudoku/workspace/jSudoku.jar
+   [delete] Deleting: /var/lib/jenkins/jobs/Sudoku/workspace/pmd.xml
+     [echo] git pull
+     [exec] Already up-to-date.
+
+src:
+    [mkdir] Created dir: /var/lib/jenkins/jobs/Sudoku/workspace/bin
+    [javac] Compiling 9 source files to /var/lib/jenkins/jobs/Sudoku/workspace/bin
+    [javac] Note: /var/lib/jenkins/jobs/Sudoku/workspace/jSudoku/src/oyg/sudoku/MainForm.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 9 files to /var/lib/jenkins/jobs/Sudoku/workspace/bin
+
+makejar:
+      [jar] Building jar: /var/lib/jenkins/jobs/Sudoku/workspace/jSudoku.jar
+
+pmd:
+BUILD SUCCESSFUL
+Total time: 3 seconds
+[PMD] Collecting PMD analysis files...
+[PMD] Finding all files that match the pattern **/pmd.xml
+[PMD] Parsing 1 file in /var/lib/jenkins/jobs/Sudoku/workspace
+[PMD] Successfully parsed file /var/lib/jenkins/jobs/Sudoku/workspace/pmd.xml with 8 unique warnings and 0 duplicates.
+[PMD] Computing warning deltas based on reference build #34
+Finished: SUCCESS
